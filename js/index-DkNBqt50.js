@@ -16,5 +16,5 @@ import{$ as s}from"./common-DoGb0hfw.js";import{B as h}from"./better-scroll.esm-
             <dd class="dd-m">月销<b class="num">${t.sold}</b>笔</dd>
             <dd class="dd-p">￥<span class="price">${t.price}</span></dd>
         </dl>
-    `).join("")+"</div>",new h(".con",{click:!0}),x()}function x(){s(".con").firstElementChild.addEventListener("click",e=>{e.target.className==="item"&&location.assign(`test/detail.html?index=${e.target.getAttribute("data-index")}`)})}s("header p").addEventListener("click",e=>{location.assign("test/search.html")});
-//# sourceMappingURL=index-Cs3tjb8o.js.map
+    `).join("")+"</div>",new h(".con",{click:!0}),x()}function x(){s(".con").firstElementChild.addEventListener("click",e=>{e.target.className==="item"&&location.assign(`./detail.html?index=${e.target.getAttribute("data-index")}`)})}s("header p").addEventListener("click",e=>{location.assign("./search.html")});
+//# sourceMappingURL=index-DkNBqt50.js.map
