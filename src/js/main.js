@@ -85,8 +85,8 @@ function render(data) {
         bol = false
     }
     const curData = data.items ? data.items : data
-    $('.con').innerHTML = bol ? '<ul>' + curData.map(item => `
-        <li>
+    $('.con').innerHTML = bol ? '<ul>' + curData.map((item,i) => `
+        <li class="item" data-index="${i}">
             <div class="left">
                 <img src="${item.img}" alt="">
             </div>
@@ -96,8 +96,8 @@ function render(data) {
                 <p class="dd-p">￥<span class="price">${item.price}</span></p>
             </div>
         </li>
-    `).join("") + '</ul>' : '<div class="scroll">' + curData.map(item => `
-        <dl>
+    `).join("") + '</ul>' : '<div class="scroll">' + curData.map((item,i) => `
+        <dl class="item" data-index="${i}">
             <dt><img src="${item.img}" alt=""></dt>
             <dd class="dd-h">${item.title}</dd>
             <dd class="dd-m">月销<b class="num">${item.sold}</b>笔</dd>
@@ -105,5 +105,14 @@ function render(data) {
         </dl>
     `).join("") + '</div>'
     // 滚动
-    new BScroll('.con')
+    new BScroll('.con',{click:true})
+    setEvent()
+}
+
+function setEvent(){
+    $('.con').firstElementChild.addEventListener('click',e => {
+        if(e.target.className === 'item'){
+            location.assign(`Milk/detail.html?index=${e.target.getAttribute('data-index')}`)
+        }
+    })
 }

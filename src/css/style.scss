@@ -57,16 +57,18 @@ header {
     padding: 1rem;
     dl {
       margin: .8rem;
-
       dt {
+        pointer-events: none;
         img {
           width: 16rem;
           height: 16rem;
+          pointer-events: none;
         }
       }
 
       dd {
         font-size: 1.6rem;
+        pointer-events: none;
       }
 
       .dd-h {
@@ -77,6 +79,7 @@ header {
       .dd-m {
         b {
           color: #EE5C46;
+          pointer-events: none;
         }
       }
 
@@ -92,17 +95,21 @@ header {
       display: flex;
 
       .left {
+        pointer-events: none;
         img {
           width: 16rem;
           height: 16rem;
+          pointer-events: none;
         }
       }
 
       .right {
         margin-left: 1rem;
+        pointer-events: none;
 
         p {
           font-size: 1.6rem;
+          pointer-events: none;
         }
 
         .dd-h {
@@ -113,6 +120,7 @@ header {
         .dd-m {
           b {
             color: #EE5C46;
+            pointer-events: none;
           }
         }
 
