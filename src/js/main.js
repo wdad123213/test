@@ -112,11 +112,11 @@ function render(data) {
 function setEvent(){
     $('.con').firstElementChild.addEventListener('click',e => {
         if(e.target.className === 'item'){
-            location.assign(`Milk/detail.html?index=${e.target.getAttribute('data-index')}`)
+            location.assign(`test/detail.html?index=${e.target.getAttribute('data-index')}`)
         }
     })
 }
 
 $('header p').addEventListener('click',e => {
-    location.assign(`Milk/search.html`)
+    location.assign(`test/search.html`)
 })

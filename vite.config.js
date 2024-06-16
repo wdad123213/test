@@ -4,7 +4,7 @@ import path from 'path'
 export default defineConfig({
     publicDir: 'public',
     // 网址前面要拼的东西
-    base: 'Milk',
+    base: 'test',
     // 打包相关配置
     build: {
         // 出口目录
