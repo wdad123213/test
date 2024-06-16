@@ -116,3 +116,7 @@ function setEvent(){
         }
     })
 }
+
+$('header p').addEventListener('click',e => {
+    location.assign(`Milk/search.html`)
+})
