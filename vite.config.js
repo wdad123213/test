@@ -17,7 +17,7 @@ export default defineConfig({
         emptyOutDir: true,
         rollupOptions: {
             input: {
-                main: path.join(__dirname, 'index.html'),
+                index: path.join(__dirname, 'index.html'),
                 search: path.join(__dirname, 'search.html'),
                 detail: path.join(__dirname, 'detail.html')
             },
