@@ -1,0 +1,1 @@
+{"version":3,"file":"common-DoGb0hfw.js","sources":["../../src/js/common.js"],"sourcesContent":["export const $ = (el,parent=document)=>parent.querySelector(el)\r\nexport const gets = (el,parent=document)=>[...parent.querySelectorAll(el)]"],"names":["$","el","parent"],"mappings":"ssBAAY,MAACA,EAAI,CAACC,EAAGC,EAAO,WAAWA,EAAO,cAAcD,CAAE"}
