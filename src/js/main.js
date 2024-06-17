@@ -61,13 +61,14 @@ function dataSort(data, bol) {
     const curData = data.items
     if (bol) {
         curData.sort((a, b) => a.price - b.price)
-        localStorage.setItem('data', JSON.stringify(curData))
+        data.items = curData
         render(curData)
     } else {
         curData.sort((a, b) => b.price - a.price)
+        data.items = curData
         render(curData)
-        localStorage.setItem('data', JSON.stringify(curData))
     }
+    localStorage.setItem('data', JSON.stringify(data))
 }
 
 // 获取数据
