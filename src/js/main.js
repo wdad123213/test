@@ -5,6 +5,7 @@ import BScroll from 'better-scroll'
 
 // 初始化
 getList('https://zyxcl.xyz/exam_api/zh')
+    .then(res => localStorage.setItem('data', JSON.stringify(res)))
 
 // 头部导航点击事件
 $('ul', $('.top')).addEventListener('click', e => {
